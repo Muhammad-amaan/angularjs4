@@ -1,0 +1,107 @@
+body{
+    font-family: 'Roboto';
+    background-color: #eceeef;
+}
+.navbar-brand {
+    float: none;
+}
+.navbar-nav .nav-item {
+    float: none;
+}
+.navbar-divider,
+.navbar-nav .nav-item+.nav-item,
+.navbar-nav .nav-link + .nav-link {
+    margin-left: 0;
+}
+@media (min-width: 34em) {
+    .navbar-brand {
+        float: left;
+        margin-right: 2rem;
+    }
+    .navbar-nav .nav-item {
+        padding-top: .535rem;
+        float: left;
+    }
+    .navbar-divider,
+    .navbar-nav .nav-item + .nav-item,
+    .navbar-nav .nav-link + .nav-link {
+
+        margin-left: 2rem;
+    }
+}
+@media (max-width: 34em) {
+    .navbar-brand {
+        display: block;
+        height: 50px;
+        padding: .55rem 0;
+    }
+
+}
+
+.navbar-toggler {
+    vertical-align:middle;
+    padding: .7rem .7rem;
+    margin: .5rem .25rem;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+    background-color: transparent;
+}
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggler .icon-bar {
+    background-color: #888;
+}
+.navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggler-right {
+    position: relative;
+    left: 15px;
+    top: 0px;
+}
+#sidebar{
+    background: #292b2c;
+    color: #fff;
+}
+#sidebar ul{
+    list-style: none;
+    padding: 0px;
+    margin:0px;
+}
+#sidebar ul li{
+    border-bottom: 2px groove #383636;
+    color: #cecece;
+    transition: width 6s;
+    -webkit-transition: width 6s;
+}
+#sidebar ul li:hover{
+    border-bottom: 2px groove #383636;
+    color: #ffffff;
+    background-color: #212223;
+}
+#sidebar ul li:last-child{
+    border-bottom: none;
+}
+#sidebar ul li a{
+    padding: 5px 15px;
+    display: inline-block;
+    color: inherit;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Roboto';
+    text-decoration: none;
+}

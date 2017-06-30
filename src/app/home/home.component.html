@@ -1,0 +1,125 @@
+
+
+<style>
+  #sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+  }
+
+  #main-content {
+    margin-left: 250px;
+  }
+</style>
+
+
+<!--<div class="navbar" (click)="toggleTitle()">toggle icon in here</div>-->
+<div id="sidebar">
+  <ul>
+    <li> <a href=""> Dashboard </a></li>
+    <li> <a href=""> Users </a></li>
+    <li> <a href=""> Tournaments </a></li>
+  </ul>
+</div>
+<section id="main-content">
+  <nav class="navbar navbar-inverse bg-inverse">
+    <button  (click)="toggleTitle()" class="navbar-toggler navbar-toggler-right" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--<a class="navbar-brand" href="#">Navbar</a>-->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <nav class="breadcrumb">
+    <a class="breadcrumb-item" href="#">Home</a>
+    <a class="breadcrumb-item" href="#">Library</a>
+    <a class="breadcrumb-item" href="#">Data</a>
+    <span class="breadcrumb-item active">Bootstrap</span>
+  </nav>
+
+  <div class="container-fluid">
+    <h3>Dashboard</h3>
+
+    <div class="row">
+
+      <div class="col-md-6 col-sm-4 sol-xs-12">
+        <h4>Button tags</h4>
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-primary" type="submit">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
+      </div>
+
+      <div class="col-md-6 col-sm-4 sol-xs-12">
+        <h4>Outline buttons</h4>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <h3>Split buttons dropdowns</h3>
+
+      <div class="col-md-6 col-sm-4 sol-xs-12">
+        <!-- Example split danger button -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="">
+        <h3>Popover</h3>
+
+        <button type="button" class="btn btn-secondary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="left">
+          Popover on left
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!--<h1 class="title" style="display:none">-->
+  <!--{{title}}-->
+<!--</h1>-->
+<!--<button> clickhere</button>-->

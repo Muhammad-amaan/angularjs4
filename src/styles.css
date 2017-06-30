@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+body{
+    background-color: #eceeef;
+}
+.breadcrumb {
+    padding: 7px 20px;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e2e2e2;
+    border-radius: 0px;
+    border-bottom: 1px solid #d2d2d2;
+}
