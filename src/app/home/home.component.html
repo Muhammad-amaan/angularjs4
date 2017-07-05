@@ -18,10 +18,11 @@
   <ul>
     <li> <a href=""> Dashboard </a></li>
     <li> <a href=""> Users </a></li>
-    <li> <a href=""> Tournaments </a></li>
+    <li> <a  [routerLink]="['/tournament']"> Tournaments </a></li>
   </ul>
 </div>
 <section id="main-content">
+
   <nav class="navbar navbar-inverse bg-inverse">
     <button  (click)="toggleTitle()" class="navbar-toggler navbar-toggler-right" type="button">
       <span class="navbar-toggler-icon"></span>
@@ -56,6 +57,9 @@
 
   <div class="container-fluid">
     <h3>Dashboard</h3>
+
+    <router-outlet></router-outlet>
+
 
     <div *ngIf="loader" class="cssload-container">
       <!--<div class="cssload-whirlpool"></div>-->

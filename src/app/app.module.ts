@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { routes } from './app.router';
+import { TournamentComponent } from './tournament/tournament.component';
 
 // const appRoutes: Routes = [
 //   { path: 'home', component: HomeComponent },
@@ -26,7 +27,8 @@ import { routes } from './app.router';
     AppComponent,
       //GetDataService,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    TournamentComponent
   ],
   imports: [
     BrowserModule,
