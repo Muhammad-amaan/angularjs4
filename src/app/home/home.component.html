@@ -57,6 +57,22 @@
   <div class="container-fluid">
     <h3>Dashboard</h3>
 
+    <div *ngIf="loader" class="cssload-container">
+      <!--<div class="cssload-whirlpool"></div>-->
+      <img src="assets/reload.gif" style="max-width: 50px;"/>
+    </div>
+
+    <div class="row">
+      <!--<div *ngIf="loader">Loading data...</div>-->
+      <div class="formgroup">
+        <select class="form-control">
+          <option *ngFor="let timezone of timezones">
+            {{timezone.Timezone}}
+          </option>
+        </select>
+      </div>
+    </div>
+
     <div class="row">
 
       <div class="col-md-6 col-sm-4 sol-xs-12">

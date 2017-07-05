@@ -49,7 +49,7 @@ body{
 }
 
 .navbar-toggler {
-    border-color: #fff;
+    border-color: transparent;
     padding: 3px 8px;
     cursor: pointer;
 }
@@ -70,8 +70,16 @@ body{
 }
 .navbar-toggler-right {
     position: relative;
-    left: 15px;
+    left: 0px;
     top: 0px;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    content: "";
+    background-size: 100%;
 }
 #sidebar{
     background: #292b2c;
@@ -97,7 +105,7 @@ body{
     border-bottom: none;
 }
 #sidebar ul li a{
-    padding: 5px 15px;
+    padding: 8px 15px;
     display: inline-block;
     color: inherit;
     width: 100%;
