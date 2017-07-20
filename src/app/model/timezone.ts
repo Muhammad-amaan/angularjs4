@@ -3,4 +3,5 @@ export class Timezone {
         public timezone: string,
         public gmt:string
     ){}
+
 }

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import 'hammerjs';
-import { FormsModule }   from '@angular/forms';
+import {  ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 //import { RouterModule, Routes } from '@angular/router';
 //import { GetDataService } from './get-data.service';
@@ -36,6 +36,7 @@ import { TournamentComponent } from './tournament/tournament.component';
     FormsModule,
     HttpModule,
     JsonpModule,
+    ReactiveFormsModule,
     MaterialModule
   ],
   providers: [],

@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
-import { Timezone } from '../model/timezone';
+import { FormBuilder, Validators  } from '@angular/forms';
+//import { Timezone } from '../model/timezone.interface';
 import { PostDataService } from '../post-data.service';
 
 
@@ -14,30 +15,23 @@ declare var $ :any;
 })
 export class TournamentComponent implements OnInit {
 
-  @Input() timezone:Timezone;
-  responseStatus:Object= [];
-  status:boolean ;
-
-  constructor(public postRequest: PostDataService) { }
 
 
-   createTimezone()
-   {
-     console.log("submit Post click happend " + this.timezone.timezone);
-     //this.postRequest.postTimezone();
-     this.postRequest.postTimezone(this.timezone).subscribe(
-         data => console.log(this.responseStatus = data),
-         err => console.log(err),
-         () => console.log('Request Completed')
-     );
 
-     this.status = true;
-   }
+  constructor(public fb: FormBuilder) {}
 
+    public loginForm = this.fb.group({
+        email: ["", Validators.required],
+        password: ["", Validators.required]
+    });
+
+    doLogin(event) {
+        console.log(event);
+        console.log(this.loginForm.value);
+    }
 
   ngOnInit() {
-    this.timezone = new Timezone();
-    this.timezone.timezone = "";
+
   }
 
 }
